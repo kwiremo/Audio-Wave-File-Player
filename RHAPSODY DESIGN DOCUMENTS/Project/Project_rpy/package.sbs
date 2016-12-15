@@ -1,0 +1,375 @@
+I-Logix-RPY-Archive version 8.12.0 C++ 9728113
+{ ISubsystem 
+	- _id = GUID 3969cbf8-e938-4f87-9874-ecd33b0adce8;
+	- _myState = 8192;
+	- _name = "package";
+	- _modifiedTimeWeak = 10.18.2016::2:46:14;
+	- weakCGTime = 10.18.2016::2:46:14;
+	- strongCGTime = 10.17.2016::14:21:2;
+	- _defaultComposite = GUID db3e9ee7-10e1-4217-a717-fd2597011849;
+	- _eventsBaseID = -1;
+	- Classes = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ IClass 
+			- _id = GUID db3e9ee7-10e1-4217-a717-fd2597011849;
+			- _myState = 40960;
+			- _name = "TopLevel";
+			- _modifiedTimeWeak = 10.17.2016::14:21:2;
+			- weakCGTime = 10.17.2016::14:21:2;
+			- strongCGTime = 10.17.2016::14:21:2;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+	}
+	- UseCases = { IRPYRawContainer 
+		- size = 5;
+		- value = 
+		{ IUseCase 
+			- _id = GUID 34331562-b9e3-4973-a24e-f0dd16331d30;
+			- _myState = 8192;
+			- _name = "plays previous";
+			- _modifiedTimeWeak = 1.2.1990::0:0:0;
+			- _description = { IDescription 
+				- _textRTF = "{\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang1033{\\fonttbl{\\f0\\fnil\\fcharset0 MS Shell Dlg;}}
+\\viewkind4\\uc1\\pard\\b\\f0\\fs17 Use Case: \\b0 Plays previous\\b\\par
+\\par
+Summary: \\b0 previous button is pressed. previous song is played.\\b\\par
+\\par
+Dependency:\\par
+\\par
+Actors: \\b0 User\\b\\par
+\\par
+Preconditions: \\b0 A song was playing\\par
+\\b\\line Main Sequence: \\par
+\\b0 1. The user presses previous button\\par
+2. The command for previous song is sent to the board.\\par
+3. The previous song is played.\\par
+\\b\\par
+Alternative sequence:\\par
+\\par
+\\par
+Nonfunctional requirements:\\par
+\\par
+Post condition: \\b0 The previous song is playing.\\par
+\\b\\par
+Outstanding questions:\\b0\\par
+}
+";
+			}
+			- weakCGTime = 1.2.1990::0:0:0;
+			- strongCGTime = 1.2.1990::0:0:0;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID a8dbab81-58b3-4815-8fd9-7c0e355fd76f;
+					- _myState = 10240;
+					- _name = "itsHuman Actor";
+					- _modifiedTimeWeak = 1.2.1990::0:0:0;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IActor";
+						- _filename = "Default.sbs";
+						- _subsystem = "Default";
+						- _class = "";
+						- _name = "Human Actor";
+						- _id = GUID 22d47bfe-12df-4f1c-a882-612e65059a8c;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+			- _EntryPoints = { IRPYRawContainer 
+				- size = 0;
+			}
+		}
+		{ IUseCase 
+			- _id = GUID b9be7e2c-e584-41b5-a27b-e63e2516b0fb;
+			- _myState = 8192;
+			- _name = "plays next";
+			- _modifiedTimeWeak = 1.2.1990::0:0:0;
+			- _description = { IDescription 
+				- _textRTF = "{\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang1033{\\fonttbl{\\f0\\fnil\\fcharset0 MS Shell Dlg;}}
+\\viewkind4\\uc1\\pard\\b\\f0\\fs17 Use Case: \\b0 Plays next song\\b\\par
+\\par
+Summary: \\b0 next button is pressed. next song is played.\\b\\par
+\\par
+Dependency:\\par
+\\par
+Actors: \\b0 User\\b\\par
+\\par
+Preconditions: \\b0 A song was playing\\par
+\\b\\line Main Sequence: \\par
+\\b0 1. The user presses next button\\par
+2. The command for next song is sent to the board.\\par
+3. The next song is played.\\par
+\\b\\par
+Alternative sequence:\\par
+\\par
+\\par
+Nonfunctional requirements:\\par
+\\par
+Post condition: \\b0 The next song is playing.\\par
+\\b\\par
+Outstanding questions:\\b0\\par
+\\b\\par
+}
+";
+			}
+			- weakCGTime = 1.2.1990::0:0:0;
+			- strongCGTime = 1.2.1990::0:0:0;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 11787334-9c27-4a61-aeab-4e6b1430486f;
+					- _myState = 10240;
+					- _name = "itsHuman Actor";
+					- _modifiedTimeWeak = 1.2.1990::0:0:0;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IActor";
+						- _filename = "Default.sbs";
+						- _subsystem = "Default";
+						- _class = "";
+						- _name = "Human Actor";
+						- _id = GUID 22d47bfe-12df-4f1c-a882-612e65059a8c;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+			- _EntryPoints = { IRPYRawContainer 
+				- size = 0;
+			}
+		}
+		{ IUseCase 
+			- _id = GUID 51b4b0d4-0527-462f-9289-bd2fb21e31b6;
+			- _myState = 8192;
+			- _name = "plays song";
+			- _modifiedTimeWeak = 1.2.1990::0:0:0;
+			- _description = { IDescription 
+				- _textRTF = "{\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang1033{\\fonttbl{\\f0\\fnil\\fcharset0 MS Shell Dlg;}{\\f1\\fnil\\fcharset0 Arial;}}
+\\viewkind4\\uc1\\pard\\b\\f0\\fs17 Use Case: \\b0 Play song\\par
+\\b\\par
+Summary: \\b0  The thumb drive is inserted. The user chooses a song to play. The user presses play buttion. The song starts to play.\\par
+\\b\\par
+Dependency: \\par
+\\par
+Actors: \\b0 Human Actor.\\par
+\\par
+\\b Preconditions: \\b0 The system is up and running and the song is chosen but not playing (paused or stopped).\\par
+\\b\\line Main Sequence: \\par
+1. \\b0 The user chooses a song to play on the user interface. \\par
+2. The user presses a \"Play\" button.\\par
+3. The name of the song to play is sent to the board.\\par
+4. The song plays.\\par
+\\b\\par
+Alternative sequence:\\par
+\\par
+Nonfunctional requirements:\\par
+\\par
+Post condition: \\b0 The song is playing.\\par
+\\b\\par
+Outstanding questions:\\b0\\f1\\fs20\\par
+}
+";
+			}
+			- weakCGTime = 1.2.1990::0:0:0;
+			- strongCGTime = 1.2.1990::0:0:0;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID c1c7afeb-42a5-4e49-b13f-1431b9905399;
+					- _myState = 10240;
+					- _name = "itsHuman Actor";
+					- _modifiedTimeWeak = 1.2.1990::0:0:0;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IActor";
+						- _filename = "Default.sbs";
+						- _subsystem = "Default";
+						- _class = "";
+						- _name = "Human Actor";
+						- _id = GUID 22d47bfe-12df-4f1c-a882-612e65059a8c;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+			- _EntryPoints = { IRPYRawContainer 
+				- size = 0;
+			}
+		}
+		{ IUseCase 
+			- _id = GUID 278d8ac5-7993-49af-a2ae-84e8e591a3a1;
+			- _myState = 8192;
+			- _name = "pauses song";
+			- _modifiedTimeWeak = 1.2.1990::0:0:0;
+			- _description = { IDescription 
+				- _textRTF = "{\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang1033{\\fonttbl{\\f0\\fnil\\fcharset0 MS Shell Dlg;}{\\f1\\fnil\\fcharset0 Arial;}}
+\\viewkind4\\uc1\\pard\\b\\f0\\fs17 Use Case: \\b0 The user pauses the song.\\par
+\\b\\par
+Summary: \\b0 The song was playing. The user presses the pause button. The song is paused.\\par
+\\par
+\\b Dependency:\\par
+\\par
+Actors: \\b0 User\\par
+\\b\\par
+Preconditions:\\par
+\\line Main Sequence:\\par
+\\b0 1. The user presses the pause button.\\par
+2. The pause command is sent to the board.\\par
+3. The board pauses the music and saves the current index location.\\par
+\\b\\par
+Alternative sequence:\\par
+\\par
+Nonfunctional requirements:\\par
+\\par
+Post condition: \\b0 The song is paused.\\par
+\\b\\par
+Outstanding questions:\\b0\\f1\\fs20\\par
+\\par
+}
+";
+			}
+			- weakCGTime = 1.2.1990::0:0:0;
+			- strongCGTime = 1.2.1990::0:0:0;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 183ed967-ee0d-46c8-be3b-64a1a678a585;
+					- _myState = 10240;
+					- _name = "itsHuman Actor";
+					- _modifiedTimeWeak = 1.2.1990::0:0:0;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IActor";
+						- _filename = "Default.sbs";
+						- _subsystem = "Default";
+						- _class = "";
+						- _name = "Human Actor";
+						- _id = GUID 22d47bfe-12df-4f1c-a882-612e65059a8c;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+			- _EntryPoints = { IRPYRawContainer 
+				- size = 0;
+			}
+		}
+		{ IUseCase 
+			- _id = GUID 7e450cea-1df2-4f5b-9ada-8cc3262a4140;
+			- _myState = 8192;
+			- _name = "exits song";
+			- _modifiedTimeWeak = 1.2.1990::0:0:0;
+			- _description = { IDescription 
+				- _textRTF = "{\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang1033{\\fonttbl{\\f0\\fnil\\fcharset0 MS Shell Dlg;}{\\f1\\fnil\\fcharset0 Arial;}}
+\\viewkind4\\uc1\\pard\\b\\f0\\fs17 Use Case: \\b0 The user exits the player.\\par
+\\par
+\\b Summary: \\b0 The user exits the player. The command is sent to exit streaming. The board quits playing music.\\par
+\\b\\par
+Dependency:\\par
+\\par
+Actors: \\b0 User\\b\\par
+\\par
+Preconditions: \\b0 The audio player is open.\\par
+\\b\\line Main Sequence:\\par
+\\b0 1. The user clicks the exit button.\\par
+2. The quit command is sent to the board.\\par
+3. The board stops streaming\\par
+\\b\\par
+Alternative sequence:\\par
+\\par
+Nonfunctional requirements:\\par
+\\par
+Post condition: \\b0 The player is closed and the board is not streaming anymore.\\par
+\\b\\par
+Outstanding questions:\\b0\\f1\\fs20\\par
+\\par
+}
+";
+			}
+			- weakCGTime = 1.2.1990::0:0:0;
+			- strongCGTime = 1.2.1990::0:0:0;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 43c95711-f393-4343-8b02-dd18be6f71c4;
+					- _myState = 10240;
+					- _name = "itsHuman Actor";
+					- _modifiedTimeWeak = 1.2.1990::0:0:0;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IActor";
+						- _filename = "Default.sbs";
+						- _subsystem = "Default";
+						- _class = "";
+						- _name = "Human Actor";
+						- _id = GUID 22d47bfe-12df-4f1c-a882-612e65059a8c;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+			- _EntryPoints = { IRPYRawContainer 
+				- size = 0;
+			}
+		}
+	}
+	- _configurationRelatedTime = 1.2.1990::0:0:0;
+}
+

@@ -1,0 +1,171 @@
+I-Logix-RPY-Archive version 8.12.0 C++ 9728113
+{ ISubsystem 
+	- _id = GUID 477e3a3c-e595-426e-b302-d61084e9ebbe;
+	- _myState = 8192;
+	- _name = "Default";
+	- _modifiedTimeWeak = 11.8.2016::14:16:53;
+	- _lastID = 9;
+	- Declaratives = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ IStereotype 
+			- _id = GUID 2300962e-2fe3-4ede-bc57-c0c364b5bb8d;
+			- _myState = 8192;
+			- _name = "user interaction";
+			- _modifiedTimeWeak = 10.17.2016::14:44:23;
+			- _m2Classes = { IRPYRawContainer 
+				- size = 1;
+				- value = "Object"; 
+			}
+		}
+	}
+	- weakCGTime = 11.8.2016::14:16:53;
+	- strongCGTime = 1.2.1990::0:0:0;
+	- _defaultComposite = GUID 506ff73a-19d4-4d4e-a837-b63aaba46050;
+	- _eventsBaseID = -1;
+	- Classes = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ IClass 
+			- _id = GUID 506ff73a-19d4-4d4e-a837-b63aaba46050;
+			- _myState = 40960;
+			- _name = "TopLevel";
+			- _modifiedTimeWeak = 10.18.2016::2:46:14;
+			- weakCGTime = 10.18.2016::2:46:14;
+			- strongCGTime = 1.2.1990::0:0:0;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+	}
+	- Actors = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ IActor 
+			- _id = GUID 22d47bfe-12df-4f1c-a882-612e65059a8c;
+			- _myState = 8192;
+			- _name = "Human Actor";
+			- _modifiedTimeWeak = 10.18.2016::2:48:52;
+			- weakCGTime = 10.18.2016::2:48:52;
+			- strongCGTime = 10.11.2016::13:18:13;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 5;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 6b31c9d7-f94b-4f83-a056-de916f0db689;
+					- _myState = 10240;
+					- _name = "itsPlays previous";
+					- _modifiedTimeWeak = 1.2.1990::0:0:0;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IUseCase";
+						- _filename = "package.sbs";
+						- _subsystem = "package";
+						- _class = "";
+						- _name = "plays previous";
+						- _id = GUID 34331562-b9e3-4973-a24e-f0dd16331d30;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID d7f948cf-801f-46f3-9e45-e7be998df747;
+					- _myState = 10240;
+					- _name = "itsPlays next";
+					- _modifiedTimeWeak = 1.2.1990::0:0:0;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IUseCase";
+						- _filename = "package.sbs";
+						- _subsystem = "package";
+						- _class = "";
+						- _name = "plays next";
+						- _id = GUID b9be7e2c-e584-41b5-a27b-e63e2516b0fb;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID b1ea6d30-c8f3-4b54-896d-b5c08fdbf69e;
+					- _myState = 10240;
+					- _name = "itsPlays song";
+					- _modifiedTimeWeak = 1.2.1990::0:0:0;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IUseCase";
+						- _filename = "package.sbs";
+						- _subsystem = "package";
+						- _class = "";
+						- _name = "plays song";
+						- _id = GUID 51b4b0d4-0527-462f-9289-bd2fb21e31b6;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID a93980df-e76d-4306-85af-9f6b4f74807a;
+					- _myState = 10240;
+					- _name = "itsPauses song";
+					- _modifiedTimeWeak = 1.2.1990::0:0:0;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IUseCase";
+						- _filename = "package.sbs";
+						- _subsystem = "package";
+						- _class = "";
+						- _name = "pauses song";
+						- _id = GUID 278d8ac5-7993-49af-a2ae-84e8e591a3a1;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 4564636d-56f0-46a2-829f-0bd8beeb48ff;
+					- _myState = 10240;
+					- _name = "itsExits song";
+					- _modifiedTimeWeak = 1.2.1990::0:0:0;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IUseCase";
+						- _filename = "package.sbs";
+						- _subsystem = "package";
+						- _class = "";
+						- _name = "exits song";
+						- _id = GUID 7e450cea-1df2-4f5b-9ada-8cc3262a4140;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+	}
+	- _configurationRelatedTime = 10.11.2016::13:23:23;
+}
+
